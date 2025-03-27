@@ -7,7 +7,7 @@ import time
 def start_ai():
     print("Recieved Response!")
     net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
-    classes = []
+    classes =  []
     with open('coco.names.txt', 'r') as f:
         classes = f.read().splitlines()
 
